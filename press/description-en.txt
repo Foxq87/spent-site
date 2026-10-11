@@ -1,0 +1,1 @@
+Spent is an iOS time tracker that shows where your day went. Log your day in one tap from the app, Control Center, a widget or the Lock Screen, and get a calm daily summary every evening. Your data stays on your device, with no account and no servers of ours.

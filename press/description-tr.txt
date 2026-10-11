@@ -1,0 +1,1 @@
+Spent, gününün nereye gittiğini gösteren bir iOS zaman takip uygulaması. Gününü uygulamadan, Denetim Merkezi'nden, widget'tan ya da Kilit Ekranı'ndan tek dokunuşla kaydeder, her akşam sakin bir günlük özet görürsün. Verilerin cihazında kalır; hesap yok, bizim sunucumuz yok.

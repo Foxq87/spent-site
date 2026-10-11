@@ -1,18 +1,104 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Spent</title>
-<style>
-body{font:17px/1.6 -apple-system,system-ui,sans-serif;max-width:640px;margin:48px auto;padding:0 20px;color:#1c1c1e}
-h1{font-size:32px;margin-bottom:4px}a{color:#0a84ff}.m{color:#6e6e73}
-@media (prefers-color-scheme:dark){body{background:#1c1c1e;color:#f2f2f7}.m{color:#98989d}}
-</style>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Spent: where did your time go?</title>
+<meta name="description" content="Spent is an iOS time tracker. Log your day in one tap, then see where your time went in a calm daily summary. No account, no servers, no judgment.">
+<meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+<link rel="canonical" href="https://foxq87.github.io/spent-site/">
+<link rel="alternate" hreflang="en" href="https://foxq87.github.io/spent-site/">
+<link rel="alternate" hreflang="tr" href="https://foxq87.github.io/spent-site/tr/">
+<link rel="alternate" hreflang="x-default" href="https://foxq87.github.io/spent-site/">
+<link rel="icon" href="/spent-site/favicon.ico" sizes="48x48">
+<link rel="icon" href="/spent-site/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/spent-site/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spent">
+<meta property="og:title" content="Spent: where did your time go?">
+<meta property="og:description" content="Spent is an iOS time tracker. Log your day in one tap, then see where your time went in a calm daily summary. No account, no servers, no judgment.">
+<meta property="og:url" content="https://foxq87.github.io/spent-site/">
+<meta property="og:image" content="https://foxq87.github.io/spent-site/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Spent: where did your time go?">
+<meta name="twitter:description" content="Spent is an iOS time tracker. Log your day in one tap, then see where your time went in a calm daily summary. No account, no servers, no judgment.">
+<meta name="twitter:image" content="https://foxq87.github.io/spent-site/og-en.png">
+
+<link rel="stylesheet" href="/spent-site/style.css">
+
 </head>
-<body>
-<h1>Spent</h1>
-<p class="m">Zamanın nereye gitti? Gününü kaydet, zamanını gör.</p>
-<p><a href="privacy.html">Gizlilik politikası</a> · Destek: <a href="mailto:calcularprojects@gmail.com">calcularprojects@gmail.com</a></p>
+<body class="">
+<nav class="nav" aria-label="Main">
+<a class="brand" href="/spent-site/">Spent</a>
+<a class="lnk" href="/spent-site/#flow">Analysis</a>
+<a class="lnk" href="/spent-site/#features">Features</a>
+<a class="lnk" href="/spent-site/support.html">Support</a>
+<a class="lang" href="/spent-site/tr/" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a>
+<a class="pill" href="/spent-site/#pricing">Get</a>
+</nav>
+<div class="wrap">
+<header class="hero">
+ <h1>Your time,<br><span>beautifully spent.</span></h1>
+ <p class="sub">The effortless way to see where your day goes. Tap once to start, tap once to fill a gap, and get a calm summary every evening.</p>
+ <span class="cta soon" role="note">Coming soon to the App Store</span><p class="note">Coming soon. The interface will be Turkish at first; English arrives in the next update.</p>
+</header>
+<div class="stage">
+ <div class="chip c1">Class <small>1h 35m</small></div><div class="chip c2">Social media <small>46m</small></div><div class="chip c3">Workout <small>40m</small></div><div class="chip c4">Reading <small>35m</small></div>
+ <div class="phone"><img src="/spent-site/img/1-today.png" width="660" height="1434" alt="Spent Today timeline with colored activity blocks" fetchpriority="high"></div>
+</div>
+<p class="note">Screens show sample data.</p>
+
+<section class="flow" id="flow">
+ <div>
+  <div class="eyebrow">Analysis</div>
+  <h2>See exactly where your week flowed.</h2>
+  <p>One chart takes your total time, splits it into groups, then into the activities behind them. The biggest stream is always the widest.</p>
+  <ul><li><i style="background:#5E5CE6"></i>Group totals at a glance: 28h 40m went to Development this week.</li><li><i style="background:#FF7A00"></i>A plain sentence under the chart says what it shows.</li><li><i style="background:#30B158"></i>Compare with last week, by day, week, month or all time.</li></ul>
+ </div>
+ <figure class="flowfig">
+  <h3>Where did your time go?</h3>
+  <p class="figsub">A sample week: 49h 48m in one view.</p>
+  <div id="sankey" role="img" aria-label="Flow chart of a sample week: 49h 48m total. Development 28h 40m (Coding 14h, Class 11h 05m, Reading 3h 35m). Screen 16h 28m (Social media). Health 4h 40m (Workout)."></div>
+  <div class="figsum">Most time went to Development: 58%</div>
+ </figure>
+</section>
+
+<section class="grid" id="features">
+ <div class="card s4"><h3>A timeline that fills itself in.</h3><p>Gaps appear as dashed blocks. Tap one, pick what you did, done. There is no confirm button.</p><img class="shot" src="/spent-site/img/1-today.png" width="660" height="1434" loading="lazy" alt="" style="right:40px"></div>
+ <div class="card s2"><h3>Optional goals</h3><p>A daily cap or a minimum.</p><div class="ring" data-t="1h 02m" role="img" aria-label="Progress ring, 1 hour 2 minutes"></div><div class="dotsrow" aria-hidden="true"><i></i><i></i><i class="g"></i><i></i><i class="g"></i><i></i><i class="o"></i></div></div>
+ <div class="card dark s3"><h3>A daily Wrapped, just for you.</h3><p>Every evening at 21:00. Informative, never preachy.</p><img class="shot" src="/spent-site/img/4-wrapped.png" width="660" height="1434" loading="lazy" alt=""></div>
+ <div class="card s3"><h3>Analysis that speaks plainly.</h3><p>One sentence under every chart, so you never have to decode a graph.</p><img class="shot" src="/spent-site/img/3-analysis.png" width="660" height="1434" loading="lazy" alt=""></div>
+ <div class="card s2"><h3>Out of the app</h3><p>Live Activity, Dynamic Island, widgets, Control Center and Action Button.</p></div>
+ <div class="card s2"><h3>Private</h3><p>No account. No servers of ours. Your data stays on your device.</p><div class="big">0</div><p>servers of ours</p></div>
+ <div class="card s2"><h3>Built for iOS 26</h3><p>Liquid Glass controls, Dark Mode, Dynamic Type and VoiceOver.</p></div>
+</section>
+
+<section class="price" id="pricing"><h2>Free for a day. Fair after that.</h2>
+ <p>Prices are shown in the app in your local currency.</p>
+ 
+ <span class="cta soon" role="note">Coming soon to the App Store</span><p class="note">Coming soon. The interface will be Turkish at first; English arrives in the next update.</p></section>
+</div><script>window.SPENT_FLOW={"h": "h", "m": "m", "total": "TOTAL", "groups": [{"n": "Development", "c": "#5E5CE6", "a": [{"n": "Coding", "m": 840, "c": "#5E5CE6"}, {"n": "Class", "m": 665, "c": "#0A84FF"}, {"n": "Reading", "m": 215, "c": "#AF52DE"}]}, {"n": "Screen", "c": "#FF7A00", "a": [{"n": "Social media", "m": 988, "c": "#FF7A00"}]}, {"n": "Health", "c": "#30B158", "a": [{"n": "Workout", "m": 280, "c": "#30B158"}]}]};</script>
+<script src="/spent-site/sankey.js" defer></script>
+<footer class="foot"><div class="footin">
+<span>© 2026 Spent</span>
+<a href="/spent-site/privacy.html">Privacy</a>
+<a href="/spent-site/terms.html">Terms</a>
+<a href="/spent-site/support.html">Support</a>
+<a href="/spent-site/press/">Press</a>
+<a href="/spent-site/tr/" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a>
+</div></footer>
+<script>
+(function(){try{
+var l=document.querySelectorAll('[data-lang]');
+for(var i=0;i<l.length;i++)l[i].addEventListener('click',function(){localStorage.setItem('spent.lang',this.getAttribute('data-lang'))});
+var ch=localStorage.getItem('spent.lang');
+if(location.pathname==='/spent-site/'&&!ch&&/^tr\b/i.test(navigator.language||''))location.replace('/spent-site/tr/'+location.hash);
+}catch(x){}})();
+</script>
 </body>
 </html>
